@@ -38,5 +38,7 @@ Was worried that I may have used flexbox properties incorrectly, but hopefully w
 
 **Screenshot**
 
+![Challenge-2 screenshot](https://user-images.githubusercontent.com/104277073/166626008-620dc2f7-1c3b-4f7b-84d8-8b5ec015a6cd.jpg)
+
 **Link to Deployed Version of Application**
 
