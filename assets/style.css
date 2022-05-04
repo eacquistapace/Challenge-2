@@ -3,12 +3,17 @@
 }
 
 :root {
-    --head-color: #485657;
+    --text-color: #485657;
     --bord-color: #586869;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 header {
@@ -24,7 +29,7 @@ header {
 h1 {
     margin: 11px;
     font-size: 5em;
-    color: var(--head-color);
+    color: var(--text-color);
 }
 
 nav ul {
@@ -36,7 +41,8 @@ nav ul {
 main {
     display: flex;
     flex-direction: column;
-    background-color: #F9F9F3;
+    /* background-color: #F9F9F3; */
+    background: url(./images/streaks.jpg);
 }
 
 p {
@@ -46,11 +52,24 @@ p {
     height: 300px;
     width: 800px;
     background-color: #F9F9F3;
-    border: 5px solid #586869;
+    border: 5px solid var(--bord-color);
     padding: 20px;
     margin: 85px;  
     color: #485657;
     font-size: 2em;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    text-shadow: 2px 2px 5px #D6DCDE;
+}
+
+a:visited {
+    color: var(--text-color)
 }
 
 #button-1:hover {
@@ -60,22 +79,24 @@ p {
     z-index:999;
 }
 
-a:link {
-    text-decoration: none;
-    color: var(--head-color);
-}
-
-a:hover {
-    text-shadow: 2px 2px 5px #D6DCDE;
-}
-
-a:visited {
-    color: var(--head-color)
-}
-
 .navbar {
     padding: 5px;
     margin: 15px;
+}
+
+.section-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: -233px -150px 40px 0;
+    height: 55px;
+    width: 110px;
+    border-radius: 25px;
+    border: 5px solid var(--bord-color);
+    background-color: #3CAAAF;
+    font-size: 22px;
+    color: var(--text-color)
 }
 
 .section-left {
@@ -86,32 +107,7 @@ a:visited {
     margin: 30px;
 }
 
-#section-1 {
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    background: url(./images/streaks.jpg);
-    background-position: left top;
-    padding: 20px;
-}
-
-#section-2 {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    align-items: center;
-    width: 1300px;
-    height: 400px;
-    border: 5px solid var(--bord-color);
-    padding: 25px;
-    margin: 30px;
-    border-radius: 25px;
-    background: url(./images/cloud.jpg);
-    background-position: left top;
-    padding: 20px;
-}
-
-#section-3 {
+#about-me {
     display: flex;
     align-items: center;
     border-radius: 25px;
@@ -131,16 +127,21 @@ a:visited {
     margin: 20px;
 }
 
-/* #section-right {
+#my-projects {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
+    align-items: center;
     width: 1300px;
     height: 400px;
     border: 5px solid var(--bord-color);
     padding: 25px;
     margin: 30px;
-} */
+    border-radius: 25px;
+    background: url(./images/paint.jpg);
+    background-position: left top;
+    padding: 20px;
+}
 
 #button-1 {
     display: flex;
@@ -152,14 +153,34 @@ a:visited {
     margin: 25px;
 }
 
+#contact-me {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background: url(./images/paint.jpg);
+    background-position: left top;
+    padding: 20px;
+}
+
 #button-2 {
     display: flex;
     flex-direction: center;
     justify-content: center;
     height: 100px;
     width: 240px;
+    background-color: #3CAAAF;
     border: 5px solid var(--bord-color);
     border-radius: 25px;
     padding: 10px;
     margin: -10px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    header {
+        height: 170px;
+    }
 }
