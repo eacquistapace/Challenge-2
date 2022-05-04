@@ -42,3 +42,4 @@ Was worried that I may have used flexbox properties incorrectly, but hopefully w
 
 **Link to Deployed Version of Application**
 
+https://eacquistapace.github.io/Challenge-2/
